@@ -3,17 +3,15 @@ vim.api.nvim_set_hl(0, "CmpNormal", { bg = "#282c34" })
 
 cmp.setup({
   formatting = {
+    fields = { "kind", "abbr", "menu" },
     format = function(entry, vim_item)
-      if vim.tbl_contains({ 'path' }, entry.source.name) then
-        local icon, hl_group = require('nvim-web-devicons').get_icon(entry:get_completion_item().label)
-        if icon then
-          vim_item.kind = icon
-          vim_item.kind_hl_group = hl_group
-          return vim_item
-        end
-      end
-      return require('lspkind').cmp_format({ with_text = false })(entry, vim_item)
-    end
+      local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+      local strings = vim.split(kind.kind, "%s", { trimempty = true })
+      kind.kind = " " .. (strings[1] or "") .. " "
+      kind.menu = "    (" .. (strings[2] or "") .. ")"
+
+      return kind
+    end,
   },
   view = {
    entries = "custom", 
@@ -26,7 +24,9 @@ cmp.setup({
   window = {
     completion = {
       border = "rounded",
-      winhighlight = "Normal:CmpNormal,FloatBorder:CmpNormal",
+      winhighlight = "Normal:CmpNormal,FloatBorder:CmpNormal,Search:None",
+      col_offset = -3,
+      side_padding = 0,
     },
     documentation = {
       border = "rounded",
