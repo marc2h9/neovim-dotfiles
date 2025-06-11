@@ -31,11 +31,10 @@ Next you open up neovim and run this command to install the plugins
 ```
 
 To fix the error that tree-sitter gives when installing you have to update with packer
+Once you have updated with packer your neovim setup is ready to go
 ```
 :PackerUpdate
 ```
-Once you have updated with packer your neovim setup is ready to go
-
 ### LSP
 To install a new LSP pack you use mason to list the available language packs
 ```
