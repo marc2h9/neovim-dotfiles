@@ -2,6 +2,9 @@ require('packer').startup(function(use)
   -- Packer
   use 'wbthomason/packer.nvim'
 
+  -- Fuzzy finder
+  use 'nvim-telescope/telescope.nvim'
+
   -- Lualine / Theme
   use 'navarasu/onedark.nvim'
   use 'nvim-lualine/lualine.nvim'
