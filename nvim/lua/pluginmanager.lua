@@ -2,7 +2,7 @@ require('packer').startup(function(use)
   -- Packer
   use 'wbthomason/packer.nvim'
 
-  -- Treesitter
+  -- Nvim Treesitter
   use { 'nvim-treesitter/nvim-treesitter', branch='main', run=':TSUpdate'}
 
   -- Fuzzy finder
@@ -22,7 +22,7 @@ require('packer').startup(function(use)
   use 'onsails/lspkind.nvim'
   use 'petertriho/cmp-git'
   use 'nvim-lua/plenary.nvim'
-  use 'L3MON4D3/LuaSnip'
+  use  { 'L3MON4D3/LuaSnip', run="make install_jsregexp" }
   use 'saadparwaiz1/cmp_luasnip'
 
   -- LSP
