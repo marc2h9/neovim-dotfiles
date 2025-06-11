@@ -2,6 +2,9 @@ require('packer').startup(function(use)
   -- Packer
   use 'wbthomason/packer.nvim'
 
+  -- Treesitter
+  use { 'nvim-treesitter/nvim-treesitter', branch='main', run=':TSUpdate'}
+
   -- Fuzzy finder
   use 'nvim-telescope/telescope.nvim'
 
