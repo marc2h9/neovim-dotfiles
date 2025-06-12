@@ -31,11 +31,11 @@ This is a repo that contains my current neovim config feel<br>
 2. **Installation:**
     * Clone the repository: `git clone https://github.com/marc2h9/neovim-dotfiles`
     * Make sure there is **no nvim directory** in the `~/.config` directory
-    * Make a symbolic link between the **nvim directory and ~/.config** 
+    * Make a symbolic link between the **nvim directory and ~/.config** command:
     * `ln -s path/to/dotfiles/nvim/ ~/.config/`
     * Start up neovim and run `:PackerInstall` **You will get a intended error when ran**
     * run `:PackerUpdate` to resolve the error
     * Enjoy!
 
 ## License
-This Repo is under the [MIT] License for more information reference `LICENSE`
+This Repo is under the [MIT](https://github.com/marc2h9/neovim-dotfiles/blob/main/LICENSE) License
