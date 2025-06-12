@@ -1,19 +1,19 @@
-# dotfiles!
-My current linux dotfiles!
+# Neovim dotfiles!
+
 
 ## Requirements
-- [Neovim v0.11.2 or higher](https://github.com/neovim/neovim)
-- [packer](https://github.com/wbthomason/packer.nvim)
-- [curl](https://github.com/curl/curl)
-- [tar](https://www.gnu.org/software/tar/)
-- [node](https://github.com/nodejs/node)
-- [npm](https://github.com/npm/cli)
-- [tree-sitter](https://github.com/tree-sitter/tree-sitter)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
+* [Neovim v0.11.2 or higher](https://github.com/neovim/neovim)
+* [packer](https://github.com/wbthomason/packer.nvim)
+* [curl](https://github.com/curl/curl)
+* [tar](https://www.gnu.org/software/tar/)
+* [node](https://github.com/nodejs/node)
+* [npm](https://github.com/npm/cli)
+* [tree-sitter](https://github.com/tree-sitter/tree-sitter)
+* [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 
 ## Installation Instructions
-The best place your dotfiles would be in the home directory
+The best place for your dotfiles would be in the home directory
 Please make sure you have all requirements before continuing
 
 ### Neovim
