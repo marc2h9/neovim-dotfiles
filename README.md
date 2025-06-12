@@ -3,6 +3,8 @@
 This is a repo that contains my current neovim config feel free to use this config if you want<br>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/marc2h9/neovim-dotfiles) ![GitHub last commit](https://img.shields.io/github/last-commit/marc2h9/neovim-dotfiles) ![GitHub Created At](https://img.shields.io/github/created-at/marc2h9/neovim-dotfiles)
 
+![](images/nvimconfigexample.png)
+
 ## Requirements
 * [Neovim v0.11.2 or higher](https://github.com/neovim/neovim)
 * [packer](https://github.com/wbthomason/packer.nvim)
