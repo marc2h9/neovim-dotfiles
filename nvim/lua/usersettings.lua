@@ -8,7 +8,11 @@ vim.keymap.set('n', '<space>fh', builtin.help_tags, { desc = 'Telescope help tag
 vim.opt.laststatus = 0
 vim.cmd([[
   set noshowmode
+  colorscheme onedark
 ]])
+
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#282c34", fg = "#abb2bf" })
+vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#ffffff", bg = "#282c34" })
 
 -- Misc
 vim.cmd([[

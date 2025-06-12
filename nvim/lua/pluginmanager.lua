@@ -25,6 +25,9 @@ require('packer').startup(function(use)
   use  { 'L3MON4D3/LuaSnip', run="make install_jsregexp" }
   use 'saadparwaiz1/cmp_luasnip'
 
+  -- LSP Signature
+  use 'ray-x/lsp_signature.nvim'
+
   -- LSP
   use 'mason-org/mason.nvim'
   use 'neovim/nvim-lspconfig'
