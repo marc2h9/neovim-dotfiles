@@ -7,6 +7,7 @@ This is a repo that contains my current neovim config feel<br>
 ![](images/nvimconfigexample.png)
 
 ## Plugins
+
     * LuaSnip
     * cmp-buffer
     * cmp-cmdline
