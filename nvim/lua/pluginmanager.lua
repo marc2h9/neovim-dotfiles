@@ -3,7 +3,13 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Nvim Treesitter
-  use { 'nvim-treesitter/nvim-treesitter', branch='main', run=':TSUpdate'}
+  use {
+    'nvim-treesitter/nvim-treesitter', branch='main',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync=true })
+      ts_update()
+    end,
+  }
 
   -- Fuzzy finder
   use 'nvim-telescope/telescope.nvim'

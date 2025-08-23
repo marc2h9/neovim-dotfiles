@@ -56,6 +56,4 @@ cmp.setup({
       { name = 'buffer' },
     })
   }),
-
-
 })
