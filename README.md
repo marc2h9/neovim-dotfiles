@@ -8,6 +8,7 @@ This is a repo that contains my current neovim config files<br>
 
 ## Plugins
 
+    * Cord
     * LuaSnip
     * cmp-buffer
     * cmp-cmdline
