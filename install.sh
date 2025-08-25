@@ -11,7 +11,7 @@ if [ "$OS" = "Ubuntu" ]; then
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
   sudo apt-get update
-  sudo apt-get install curl tar ripgrep -y
+  sudo apt-get install curl tar ripgrep unzip -y
   snap install node
 
   USER=$(whoami)
@@ -25,7 +25,7 @@ elif [ "$OS" = "Arch Linux" ]; then
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
   sudo pacman -Syu
-  sudo pacman -S --noconfirm neovim curl tar ripgrep npm
+  sudo pacman -S --noconfirm neovim curl tar ripgrep npm unzip
 
   USER=$(whoami)
   ln -s /home/neovim-dotfiles/nvim/ /home/$USER/.config/
