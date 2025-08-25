@@ -20,7 +20,7 @@ if [ "$OS" = "Ubuntu" ]; then
   echo CONFIG SUCCESSFULLY INSTALLED!
   echo DO NOT DELETE THE CURRENT DIRECTORY
 
-elif [ "$OS" = "Arch" ]; then
+elif [ "$OS" = "Arch Linux" ]; then
   git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
