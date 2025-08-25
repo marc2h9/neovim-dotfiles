@@ -10,7 +10,11 @@ require('packer').startup(function(use)
       ts_update()
     end,
   }
-
+  -- Cord-nvim
+  use {
+    'vyfor/cord.nvim',
+    run = ":Cord update",
+  }
   -- Fuzzy finder
   use 'nvim-telescope/telescope.nvim'
 

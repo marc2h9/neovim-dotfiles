@@ -109,6 +109,16 @@ _G.packer_plugins = {
     path = "/home/marc2h9/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["cord.nvim"] = {
+    loaded = true,
+    path = "/home/marc2h9/.local/share/nvim/site/pack/packer/start/cord.nvim",
+    url = "https://github.com/vyfor/cord.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/marc2h9/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/marc2h9/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
