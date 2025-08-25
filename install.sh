@@ -11,7 +11,7 @@ if [ "$OS" = "Ubuntu" ]; then
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
   sudo apt-get update
-  sudo apt-get install curl tar ripgrep -y
+  sudo apt-get install curl tar ripgrep unzip -y
   snap install node
 
   USER=$(whoami)
@@ -20,6 +20,16 @@ if [ "$OS" = "Ubuntu" ]; then
   echo CONFIG SUCCESSFULLY INSTALLED!
   echo DO NOT DELETE THE CURRENT DIRECTORY
 
-elif [ "$OS" = "Arch" ]; then
-  echo "Arch support will be added later"
+elif [ "$OS" = "Arch Linux" ]; then
+  git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+  
+  sudo pacman -Syu
+  sudo pacman -S --noconfirm curl tar ripgrep npm unzip neovim
+
+  USER=$(whoami)
+  ln -s /home/neovim-dotfiles/nvim/ /home/$USER/.config/
+  clear
+  echo CONFIG SUCCESSFULLY INSTALLED!
+  echo DO NOT DELETE THE CURRENT DIRECTORY
 fi
