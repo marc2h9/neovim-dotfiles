@@ -21,5 +21,16 @@ if [ "$OS" = "Ubuntu" ]; then
   echo DO NOT DELETE THE CURRENT DIRECTORY
 
 elif [ "$OS" = "Arch" ]; then
-  echo "Arch support will be added later"
+  git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+  sudo pacman -Syu
+  sudo pacman -S --noconfirm neovim curl tar ripgrep npm
+
+  USER=$(whoami)
+  ln -s /home/neovim-dotfiles/nvim/ /home/$USER/.config/
+  clear
+  echo CONFIG SUCCESSFULLY INSTALLED!
+  echo DO NOT DELETE THE CURRENT DIRECTORY
+
 fi
