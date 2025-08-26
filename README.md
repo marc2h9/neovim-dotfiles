@@ -29,7 +29,17 @@ This is a repo that contains my current neovim config files<br>
     * plenary.nvim
     * telescope.nvim
 
-## Installation Instructions
+## Auto Install Script
+1. **Supported Distro's**
+
+2. **Installation**
+    * Clone the repository `git clone https://github.com/marc2h9/neovim-dotfiles`
+    * Make sure there is **no nvim directory** in the `~/.config` directory
+    * To make install.sh executable run `chmod +x install.sh`
+    * Run the install.sh with `./install.sh`
+    * Enjoy!
+
+## Manual Installation Instructions
 
 1. **Prerequisites:**
     * [Neovim v0.11.2 or higher](https://github.com/neovim/neovim)
