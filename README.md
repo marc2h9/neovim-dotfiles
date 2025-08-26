@@ -31,7 +31,8 @@ This is a repo that contains my current neovim config files<br>
 
 ## Auto Install Script
 1. **Supported Distro's**
-
+    * Ubuntu
+    * Arch
 2. **Installation**
     * Clone the repository `git clone https://github.com/marc2h9/neovim-dotfiles`
     * Make sure there is **no nvim directory** in the `~/.config` directory
