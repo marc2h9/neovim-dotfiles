@@ -19,7 +19,9 @@ function cleanup-message() {
   echo DO NOT DELETE THE CURRENT DIRECTORY
 }
 
-if [ "$OS" = "Ubuntu" ]; then
+echo OS Found: $OS
+
+if [ "$OS" = "Ubuntu" ] || [ "$OS" = "Linux Mint" ]; then
   git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
